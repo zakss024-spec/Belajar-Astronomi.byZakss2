@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#030712">
+<title>Zakss Astronom</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#02050d;color:#f4f7ff;font-family:Arial,sans-serif}
+#loader{position:fixed;inset:0;z-index:99;background:radial-gradient(circle,#16265b,#050814 55%,#010207);display:grid;place-items:center;transition:.8s}
+#loader.hide{opacity:0;visibility:hidden}.load{text-align:center}.planet{width:100px;height:100px;border-radius:50%;margin:auto auto 22px;background:linear-gradient(135deg,#83b6ff,#304caa 55%,#121936);box-shadow:0 0 50px #538cff88;animation:float 2s ease-in-out infinite}
+.load h1{font-size:clamp(30px,8vw,58px);margin:0}.load p{color:#aebcdf;font-size:13px}.bar{width:240px;height:4px;background:#202b48;margin:25px auto;overflow:hidden;border-radius:5px}.bar i{display:block;width:0;height:100%;background:#79a8ff;animation:loading 2.7s forwards}
+@keyframes loading{to{width:100%}}@keyframes float{50%{transform:translateY(-10px)}}
+header{position:sticky;top:0;z-index:10;background:#050916dd;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff12}nav{max-width:1100px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between}.logo{font-weight:bold;color:#82adff}nav a{color:#ccd6ec;text-decoration:none;margin-left:18px;font-size:14px}
+.hero{text-align:center;min-height:70vh;display:grid;place-items:center;padding:70px 20px;background:radial-gradient(circle at 50% 40%,#182b6333,transparent 45%)}.badge{color:#83adff;border:1px solid #83adff55;padding:7px 12px;border-radius:20px;font-size:12px}.hero h2{font-size:clamp(38px,8vw,70px);margin:18px 0 10px}.hero p{max-width:680px;margin:auto;color:#aebbd4;line-height:1.7}.btn{display:inline-block;margin-top:25px;padding:12px 20px;background:#77a5ff;color:#06102b;border-radius:10px;text-decoration:none;font-weight:bold}
+section{max-width:1100px;margin:auto;padding:65px 20px}.title{font-size:30px;margin-bottom:25px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.space-card{background:#080e20;border:1px solid #ffffff12;border-radius:18px;overflow:hidden;box-shadow:0 12px 35px #0005;transition:.25s}.space-card:hover{transform:translateY(-5px);border-color:#739fff66}
+.space-card img{width:100%;height:190px;object-fit:cover;display:block}.caption{padding:18px}.caption h3{margin:0 0 9px}.caption p{margin:0;color:#aeb9cf;line-height:1.6;font-size:14px}
+.fact{padding:20px;background:#0a132b;border-left:4px solid #6f9cff;border-radius:10px;line-height:1.7;color:#d7e1f5}
+footer{text-align:center;color:#65728d;padding:40px 20px;border-top:1px solid #ffffff10;font-size:13px}
+@media(max-width:600px){nav a{display:none}.space-card img{height:180px}}
+</style>
+</head>
+<body>
+<div id="loader"><div class="load"><div class="planet"></div><h1>Zakss Astronom</h1><p>*kenalin gw pacarnya fahira*</p><div class="bar"><i></i></div></div></div>
+
+<header><nav><div class="logo">ZAKSS ASTRONOM</div><div><a href="#jelajah">Jelajah</a><a href="#materi">Materi</a><a href="#fakta">Fakta</a></div></nav></header>
+
+<section class="hero">
+<div><span class="badge">PEMBELAJARAN ASTRONOMI</span><h2>Jelajahi Alam Semesta 🌌</h2><p>Kenali berbagai objek luar angkasa melalui gambar dan penjelasan singkat yang mudah dipahami.</p><a class="btn" href="#jelajah">Mulai Jelajah 🚀</a></div>
+</section>
+
+<section id="jelajah">
+<div class="title">Galeri Luar Angkasa</div>
+<div class="grid">
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=900&q=80" alt="Bumi dari luar angkasa"><div class="caption"><h3>🌍 Bumi</h3><p>Bumi adalah planet tempat kita tinggal. Dari luar angkasa, atmosfernya terlihat seperti lapisan tipis yang menyelimuti planet.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1502134249126-9f3755a50d78?auto=format&fit=crop&w=900&q=80" alt="Bulan"><div class="caption"><h3>🌙 Bulan</h3><p>Bulan merupakan satelit alami Bumi. Permukaannya memiliki banyak kawah yang terbentuk akibat tumbukan benda langit.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1534791547706-5b8590a90baf?auto=format&fit=crop&w=900&q=80" alt="Galaksi Bima Sakti"><div class="caption"><h3>🌌 Bima Sakti</h3><p>Bima Sakti adalah galaksi yang menjadi rumah bagi Tata Surya. Di dalamnya terdapat sangat banyak bintang.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?auto=format&fit=crop&w=900&q=80" alt="Planet Saturnus"><div class="caption"><h3>🪐 Saturnus</h3><p>Saturnus adalah planet raksasa gas yang terkenal karena sistem cincinnya yang sangat jelas dan luas.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1614313913007-2b4ae8ce32d6?auto=format&fit=crop&w=900&q=80" alt="Planet Jupiter"><div class="caption"><h3>🟠 Jupiter</h3><p>Jupiter adalah planet terbesar di Tata Surya. Atmosfernya memiliki pola awan yang kompleks dan badai besar.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=900&q=80" alt="Nebula"><div class="caption"><h3>✨ Nebula</h3><p>Nebula adalah awan besar gas dan debu di ruang angkasa. Beberapa nebula menjadi tempat terbentuknya bintang baru.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1465101162946-4377e57745c3?auto=format&fit=crop&w=900&q=80" alt="Bintang"><div class="caption"><h3>⭐ Bintang</h3><p>Bintang adalah bola gas panas yang menghasilkan energi dan cahaya. Matahari adalah salah satu bintang.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1537420327992-d6e192287183?auto=format&fit=crop&w=900&q=80" alt="Galaksi"><div class="caption"><h3>🌀 Galaksi</h3><p>Galaksi merupakan kumpulan besar bintang, gas, debu, dan materi lain yang terikat oleh gravitasi.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?auto=format&fit=crop&w=900&q=80" alt="Astronaut"><div class="caption"><h3>👨‍🚀 Astronaut</h3><p>Astronaut adalah orang yang dilatih untuk melakukan perjalanan dan bekerja di lingkungan luar angkasa.</p></div></article>
+
+<article class="space-card"><img src="https://images.unsplash.com/photo-1447433819943-74a20887a81e?auto=format&fit=crop&w=900&q=80" alt="Roket"><div class="caption"><h3>🚀 Roket</h3><p>Roket digunakan untuk membawa manusia atau muatan menuju luar angkasa dengan menghasilkan gaya dorong.</p></div></article>
+
+</div>
+</section>
+
+<section id="materi"><div class="title">Materi Dasar</div><div class="grid">
+<div class="fact">☀️ <b>Matahari:</b> pusat Tata Surya dan sumber energi utama bagi Bumi.</div>
+<div class="fact">🪐 <b>Planet:</b> benda langit yang mengorbit bintang dan tidak menghasilkan cahaya sendiri seperti bintang.</div>
+<div class="fact">🌠 <b>Asteroid:</b> benda berbatu atau logam yang mengorbit Matahari, banyak ditemukan di sabuk asteroid.</div>
+<div class="fact">☄️ <b>Komet:</b> benda yang tersusun dari es, debu, dan material lain yang dapat membentuk ekor ketika mendekati Matahari.</div>
+</div></section>
+
+<section id="fakta"><div class="title">Fakta Singkat 💡</div><div class="grid">
+<div class="fact">Cahaya Matahari membutuhkan sekitar 8 menit 20 detik untuk sampai ke Bumi.</div>
+<div class="fact">Tahun cahaya adalah satuan jarak yang digunakan untuk mengukur jarak sangat jauh di alam semesta.</div>
+<div class="fact">Tata Surya berada di salah satu bagian Galaksi Bima Sakti.</div>
+</div></section>
+
+<footer>© 2026 Zakss Astronom • Belajar, mengamati, dan menjelajah alam semesta.</footer>
+<script>setTimeout(()=>document.getElementById("loader").classList.add("hide"),3000);</script>
+</body>
+</html>
